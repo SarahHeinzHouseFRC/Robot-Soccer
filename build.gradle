@@ -1,0 +1,50 @@
+buildscript {
+    repositories {
+        flatDir name: 'libs', dirs: 'gradle/libs'
+    }
+
+    dependencies {
+        classpath group: 'jaci.openrio.gradle', name: 'GradleRIO', version: '1.1.6'
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+apply plugin: "GradleRIO"                                 //Apply the GradleRIO plugin
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'eclipse'
+
+dependencies {
+    compile files('gradle/libs/commons-csv-1.1.jar')
+    compile files('gradle/libs/json-simple-1.1.1.jar')
+}
+
+sourceSets.main.java.srcDirs = ["src"]
+
+gradlerio.robotClass = "org.sharp.frc.team3260.RobotSoccer.Robot"   //The class for the main Robot Class. Used in manifest
+gradlerio.team = "3260"                                   //Your FRC team number (e.g. 5333 for team 'Can't C#', or 47 for Chief Delphi)
+gradlerio.rioIP = "10.32.60.22"                         //Uncomment to specify the IP address of the RIO
+
+def robotManifest = {
+    attributes 'Main-Class': 'edu.wpi.first.wpilibj.RobotBase'
+    attributes 'Robot-Class': gradlerio.robotClass
+}
+
+jar {
+    from files(sourceSets.main.output.classesDir)
+
+    from configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    manifest robotManifest
+}
+
+task genJavadoc(type: Jar, dependsOn: javadoc) {
+    classifier = 'javadoc'
+    from javadoc.destinationDir
+}
+
+artifacts {
+    archives genJavadoc
+}
