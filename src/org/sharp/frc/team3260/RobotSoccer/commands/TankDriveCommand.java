@@ -1,6 +1,8 @@
 package org.sharp.frc.team3260.RobotSoccer.commands;
 
 import edu.wpi.first.wpilibj.command.Command;
+import org.sharp.frc.team3260.RobotSoccer.OI;
+import org.sharp.frc.team3260.RobotSoccer.joystick.SHARPGamepad;
 import org.sharp.frc.team3260.RobotSoccer.subsystems.DriveTrain;
 
 /**
@@ -20,8 +22,9 @@ public class TankDriveCommand extends Command {
     @Override
     protected void execute() {
 
-
-
+        double left = (OI.getInstance()).getDriverJoystick().getRawAxis(SHARPGamepad.JOYSTICK_LEFT_Y);
+        double right = (OI.getInstance()).getDriverJoystick().getRawAxis(SHARPGamepad.JOYSTICK_RIGHT_Y);
+        DriveTrain.getInstance().tankDrive(left, right);
     }
 
     @Override

@@ -4,6 +4,7 @@ import edu.wpi.first.wpilibj.CANTalon;
 import edu.wpi.first.wpilibj.command.Subsystem;
 import edu.wpi.first.wpilibj.hal.CanTalonJNI;
 import org.sharp.frc.team3260.RobotSoccer.RobotMap;
+import org.sharp.frc.team3260.RobotSoccer.commands.TankDriveCommand;
 
 /**
  * Created by robolab on 11/18/2015.
@@ -22,6 +23,8 @@ public class DriveTrain extends Subsystem {
     }
     @Override
     protected void initDefaultCommand() {
+
+        setDefaultCommand(new TankDriveCommand());
 
     }
 
