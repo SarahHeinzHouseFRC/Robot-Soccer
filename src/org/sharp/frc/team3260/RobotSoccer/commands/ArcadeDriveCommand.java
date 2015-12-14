@@ -1,19 +1,19 @@
 package org.sharp.frc.team3260.RobotSoccer.commands;
 
-import com.sun.corba.se.impl.orbutil.closure.Constant;
 import edu.wpi.first.wpilibj.command.Command;
+import javafx.scene.shape.Arc;
 import org.sharp.frc.team3260.RobotSoccer.Constants;
 import org.sharp.frc.team3260.RobotSoccer.OI;
 import org.sharp.frc.team3260.RobotSoccer.joystick.SHARPGamepad;
 import org.sharp.frc.team3260.RobotSoccer.subsystems.DriveTrain;
 
 /**
- * Created by robolab on 11/18/2015.
+ * Created by Administrator on 12/12/2015.
  */
-public class TankDriveCommand extends Command {
+public class ArcadeDriveCommand extends Command {
 
-    public TankDriveCommand(){
-
+    public ArcadeDriveCommand()
+    {
         requires(DriveTrain.getInstance());
     }
     @Override
@@ -24,13 +24,13 @@ public class TankDriveCommand extends Command {
     @Override
     protected void execute() {
 
-        double left = (OI.getInstance()).getDriverJoystick().getRawAxis(SHARPGamepad.JOYSTICK_LEFT_Y);
-        double right = (OI.getInstance()).getDriverJoystick().getRawAxis(SHARPGamepad.JOYSTICK_RIGHT_Y);
+        double fwd = (OI.getInstance()).getDriverJoystick().getRawAxis(SHARPGamepad.JOYSTICK_LEFT_Y);
+        double rot = (OI.getInstance()).getDriverJoystick().getRawAxis(SHARPGamepad.JOYSTICK_RIGHT_X);
 
-        left = Math.abs(left) > Constants.JOYSTICK_THRESHOLD ? left : 0.0;
-        right = Math.abs(right) > Constants.JOYSTICK_THRESHOLD ? right :0.0;
+        fwd = Math.abs(fwd) > Constants.JOYSTICK_THRESHOLD ? fwd : 0.0;
+        rot = Math.abs(rot) > Constants.JOYSTICK_THRESHOLD ? rot :0.0;
 
-        DriveTrain.getInstance().tankDrive(left, right);
+        DriveTrain.getInstance().arcadeDrive(-fwd, -rot);
     }
 
     @Override
