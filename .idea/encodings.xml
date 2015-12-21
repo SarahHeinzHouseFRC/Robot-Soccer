@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/kauailabs/nav6/IMUProtocol.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/kauailabs/nav6/frc/IMU.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/kauailabs/nav6/frc/IMUAdvanced.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/kauailabs/navx_mxp/AHRS.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/kauailabs/navx_mxp/AHRSProtocol.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/org/sharp/frc/team3260/RobotSoccer/commands/autonomous/DriveDistanceAccelerometerCommand.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/org/sharp/frc/team3260/RobotSoccer/utils/Util.java" charset="windows-1252" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

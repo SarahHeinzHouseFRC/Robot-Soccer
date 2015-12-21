@@ -24,8 +24,8 @@ public class ArcadeDriveCommand extends Command {
     @Override
     protected void execute() {
 
-        double fwd = (OI.getInstance()).getDriverJoystick().getRawAxis(SHARPGamepad.JOYSTICK_LEFT_Y);
-        double rot = (OI.getInstance()).getDriverJoystick().getRawAxis(SHARPGamepad.JOYSTICK_RIGHT_X);
+        double fwd = (Math.pow(OI.getInstance().getDriverJoystick().getRawAxis(SHARPGamepad.JOYSTICK_LEFT_Y),3));
+        double rot = (Math.pow(OI.getInstance().getDriverJoystick().getRawAxis(SHARPGamepad.JOYSTICK_RIGHT_X),3));
 
         fwd = Math.abs(fwd) > Constants.JOYSTICK_THRESHOLD ? fwd : 0.0;
         rot = Math.abs(rot) > Constants.JOYSTICK_THRESHOLD ? rot :0.0;

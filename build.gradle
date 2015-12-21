@@ -18,7 +18,7 @@ apply plugin: 'idea'
 apply plugin: 'eclipse'
 
 dependencies {
-    compile files('gradle/libs/commons-csv-1.1.jar')
+    compile files('gradle/libs/navx_frc.jar')
     compile files('gradle/libs/json-simple-1.1.1.jar')
 }
 

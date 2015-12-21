@@ -1,6 +1,5 @@
 package org.sharp.frc.team3260.RobotSoccer.commands;
 
-import com.sun.corba.se.impl.orbutil.closure.Constant;
 import edu.wpi.first.wpilibj.command.Command;
 import org.sharp.frc.team3260.RobotSoccer.Constants;
 import org.sharp.frc.team3260.RobotSoccer.OI;
