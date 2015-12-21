@@ -1,21 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="72fdad28-bcc6-4207-b13f-9cb0c2213e95" name="Default" comment="lols">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/sharp/frc/team3260/RobotSoccer/commands/autonomous/AlignWithVisionObjectCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/sharp/frc/team3260/RobotSoccer/commands/autonomous/FindVisionObjectCommand.java" />
-      <change type="DELETED" beforePath="C:\Users\Administrator\IdeaProjects\Robot-Soccer\src\org\sharp\frc\team3260\RobotSoccer\subsystems\SHARPSubsystems\VisionSerialSubsystem.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/sharp/frc/team3260/RobotSoccer/commands/ArcadeDriveCommand.java" afterPath="$PROJECT_DIR$/src/org/sharp/frc/team3260/RobotSoccer/commands/ArcadeDriveCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/sharp/frc/team3260/RobotSoccer/Constants.java" afterPath="$PROJECT_DIR$/src/org/sharp/frc/team3260/RobotSoccer/Constants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/sharp/frc/team3260/RobotSoccer/subsystems/DriveTrain.java" afterPath="$PROJECT_DIR$/src/org/sharp/frc/team3260/RobotSoccer/subsystems/DriveTrain.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/sharp/frc/team3260/RobotSoccer/OI.java" afterPath="$PROJECT_DIR$/src/org/sharp/frc/team3260/RobotSoccer/OI.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Robot-Soccer.iml" afterPath="$PROJECT_DIR$/.idea/Robot-Soccer.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/sharp/frc/team3260/RobotSoccer/Robot.java" afterPath="$PROJECT_DIR$/src/org/sharp/frc/team3260/RobotSoccer/Robot.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/sharp/frc/team3260/RobotSoccer/commands/TankDriveCommand.java" afterPath="$PROJECT_DIR$/src/org/sharp/frc/team3260/RobotSoccer/commands/TankDriveCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/sharp/frc/team3260/RobotSoccer/subsystems/Vision.java" afterPath="$PROJECT_DIR$/src/org/sharp/frc/team3260/RobotSoccer/subsystems/Vision.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="72fdad28-bcc6-4207-b13f-9cb0c2213e95" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/sharp/frc/team3260/RobotSoccer/commands/autonomous/DriveAtSpeedCommand.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/sharp/frc/team3260/RobotSoccer/commands/autonomous/DriveDistanceAccelerometerCommand.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/sharp/frc/team3260/RobotSoccer/commands/autonomous/ReadVisionSerialDataCommand.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/sharp/frc/team3260/RobotSoccer/commands/autonomous/VisionCommandGroup.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="219739f0-e14f-4648-906d-78ef487e40a3" name="New changelist" comment="" />
@@ -315,28 +305,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="subsystems" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Robot Soccer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Robot-Soccer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RobotSoccer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="commands" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -611,15 +579,22 @@
       <option name="project" value="LOCAL" />
       <updated>1450117430114</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Changes after competition + OpenCV Odroid Vision">
+      <created>1450719755169</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1450719755169</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5058565" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -627,13 +602,12 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29355782" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29355782" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -657,7 +631,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Lol" />
     <MESSAGE value="lols" />
-    <option name="LAST_COMMIT_MESSAGE" value="lols" />
+    <MESSAGE value="Changes after competition + OpenCV Odroid Vision" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes after competition + OpenCV Odroid Vision" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
